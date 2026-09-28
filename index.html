@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodia - Sua Música, Sua Forma</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts: Poppins para títulos, Inter para texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Estilos extras simples (só CSS, sem JavaScript) -->
+    <style>
+        /* Deixa o espaço pro menu fixo não cobrir o hero */
+        main {
+            padding-top: 4rem;
+        }
+        /* Títulos usam a fonte Poppins */
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Suaviza a rolagem ao clicar nos links do menu */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ===== MENU FIXO COM TRANSPARÊNCIA (só CSS) ===== -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+            <!-- Logo -->
+            <a href="#inicio" class="flex items-center gap-2 text-2xl font-bold text-violet-600">
+                <i class="fa-solid fa-music"></i> Melodia
+            </a>
+            <!-- Links de navegação -->
+            <ul class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-700">
+                <li><a href="#inicio" class="hover:text-violet-600">Início</a></li>
+                <li><a href="#beneficios" class="hover:text-violet-600">Benefícios</a></li>
+                <li><a href="#funcionalidades" class="hover:text-violet-600">Funcionalidades</a></li>
+                <li><a href="#depoimentos" class="hover:text-violet-600">Depoimentos</a></li>
+                <li><a href="#contato" class="hover:text-violet-600">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <section id="inicio" class="bg-gradient-to-b from-violet-100 via-white to-white">
+            <div class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <!-- Texto do hero -->
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        Melodia: Sua Música, Sua Forma
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Ouça suas músicas favoritas com qualidade de som superior,
+                        descubra novos artistas todos os dias e leve sua trilha sonora
+                        para onde quiser. Tudo isso em um app simples e intuitivo.
+                    </p>
+                    <!-- Botão de ação -->
+                    <a href="#contato"
+                       class="inline-block mt-8 bg-violet-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-violet-700 transition">
+                        Ouvir Agora <i class="fa-solid fa-play ml-2"></i>
+                    </a>
+                </div>
+                <!-- Imagem em destaque -->
+                <div class="flex justify-center">
+                    <img src="https://placehold.co/600x400/7c3aed/ffffff?text=Melodia+App"
+                         alt="Prévia do aplicativo Melodia"
+                         class="rounded-2xl shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BENEFÍCIOS ===== -->
+        <section id="beneficios" class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900">Por que escolher a Melodia?</h2>
+                <p class="text-center text-gray-600 mt-2">Tudo o que você precisa para curtir música do seu jeito.</p>
+
+                <!-- Grade com 4 cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl shadow p-6 text-center">
+                        <div class="w-14 h-14 mx-auto bg-violet-600 text-white rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Qualidade de som superior</h3>
+                        <p class="mt-2 text-sm text-gray-600">Áudio cristalino em todas as músicas, do começo ao fim.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl shadow p-6 text-center">
+                        <div class="w-14 h-14 mx-auto bg-rose-500 text-white rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Playlists personalizadas</h3>
+                        <p class="mt-2 text-sm text-gray-600">Playlists criadas com base no seu gosto e no seu humor.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-xl shadow p-6 text-center">
+                        <div class="w-14 h-14 mx-auto bg-violet-600 text-white rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Descoberta de novos artistas</h3>
+                        <p class="mt-2 text-sm text-gray-600">Sugestões semanais para você sair da bolha musical.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-xl shadow p-6 text-center">
+                        <div class="w-14 h-14 mx-auto bg-rose-500 text-white rounded-full flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3 class="mt-4 font-semibold text-lg">Interface intuitiva</h3>
+                        <p class="mt-2 text-sm text-gray-600">Design simples e bonito: encontre tudo em poucos toques.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FUNCIONALIDADES ===== -->
+        <section id="funcionalidades" class="py-16 bg-violet-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900">Funcionalidades</h2>
+                <p class="text-center text-gray-600 mt-2">Recursos que fazem a diferença no seu dia a dia.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+
+                    <!-- Funcionalidade 1 -->
+                    <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <i class="fa-solid fa-cloud-arrow-down text-2xl text-violet-600"></i>
+                        <h3 class="mt-3 font-semibold text-lg">Ouvir offline</h3>
+                        <p class="mt-2 text-sm text-gray-600">Baixe suas músicas e ouça sem internet, onde estiver.</p>
+                    </div>
+
+                    <!-- Funcionalidade 2 -->
+                    <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <i class="fa-solid fa-people-group text-2xl text-violet-600"></i>
+                        <h3 class="mt-3 font-semibold text-lg">Modo festa</h3>
+                        <p class="mt-2 text-sm text-gray-600">Crie uma fila compartilhada e deixe todos escolherem a próxima.</p>
+                    </div>
+
+                    <!-- Funcionalidade 3 -->
+                    <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <i class="fa-solid fa-tower-broadcast text-2xl text-violet-600"></i>
+                        <h3 class="mt-3 font-semibold text-lg">Rádio personalizada</h3>
+                        <p class="mt-2 text-sm text-gray-600">Uma rádio infinita baseada em uma única música que você ama.</p>
+                    </div>
+
+                    <!-- Funcionalidade 4 -->
+                    <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+                        <i class="fa-solid fa-chart-simple text-2xl text-violet-600"></i>
+                        <h3 class="mt-3 font-semibold text-lg">Estatísticas de escuta</h3>
+                        <p class="mt-2 text-sm text-gray-600">Veja seus artistas e gêneros mais ouvidos do mês.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DEPOIMENTOS ===== -->
+        <section id="depoimentos" class="py-16">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900">O que dizem nossos usuários</h2>
+                <p class="text-center text-gray-600 mt-2">Histórias reais de quem já usa o app.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+                    <!-- Depoimento 1 -->
+                    <div class="bg-white rounded-xl shadow p-6">
+                        <i class="fa-solid fa-quote-left text-2xl text-violet-400"></i>
+                        <p class="mt-3 text-gray-600 text-sm">
+                            "A qualidade do som é impressionante. Nunca mais consegui ouvir
+                            música em outro app do mesmo jeito."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://i.pravatar.cc/100?img=1" alt="Foto de Ana" class="w-10 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold text-sm">Ana Souza</p>
+                                <p class="text-xs text-gray-500">São Paulo, SP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="bg-white rounded-xl shadow p-6">
+                        <i class="fa-solid fa-quote-left text-2xl text-violet-400"></i>
+                        <p class="mt-3 text-gray-600 text-sm">
+                            "O modo festa salvou minha reunião de aniversário. Todo mundo
+                            escolheu música pela fila compartilhada!"
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Foto de Lucas" class="w-10 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold text-sm">Lucas Pereira</p>
+                                <p class="text-xs text-gray-500">Belo Horizonte, MG</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="bg-white rounded-xl shadow p-6">
+                        <i class="fa-solid fa-quote-left text-2xl text-violet-400"></i>
+                        <p class="mt-3 text-gray-600 text-sm">
+                            "Descobri bandas incríveis pelas sugestões semanais. O app
+                            entende meu gosto melhor que eu."
+                        </p>
+                        <div class="flex items-center gap-3 mt-5">
+                            <img src="https://i.pravatar.cc/100?img=9" alt="Foto de Marina" class="w-10 h-10 rounded-full">
+                            <div>
+                                <p class="font-semibold text-sm">Marina Costa</p>
+                                <p class="text-xs text-gray-500">Recife, PE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FORMULÁRIO DE CONTATO ===== -->
+        <section id="contato" class="py-16 bg-violet-600">
+            <div class="max-w-2xl mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white">Fique por dentro das novidades</h2>
+                <p class="text-violet-100 mt-2">
+                    Deixe seu e-mail e receba campanhas exclusivas, lançamentos e dicas musicais.
+                </p>
+
+                <!-- Formulário simples (sem JavaScript) -->
+                <form class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+                    <input type="email" required placeholder="Seu melhor e-mail"
+                           class="w-full sm:w-80 px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                    <button type="submit"
+                            class="bg-white text-violet-700 font-semibold px-8 py-3 rounded-full hover:bg-violet-100 transition">
+                        Quero receber novidades
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Coluna 1: contato -->
+            <div>
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-music mr-2 text-violet-400"></i>Melodia</h3>
+                <p class="mt-3 text-sm text-gray-400">
+                    <i class="fa-solid fa-envelope mr-2"></i>contato@melodia.com
+                </p>
+                <p class="mt-1 text-sm text-gray-400">
+                    <i class="fa-solid fa-phone mr-2"></i>(11) 90000-0000
+                </p>
+            </div>
+
+            <!-- Coluna 2: redes sociais -->
+            <div>
+                <h3 class="font-bold text-lg">Redes sociais</h3>
+                <div class="flex gap-4 mt-3 text-xl">
+                    <a href="#" class="text-gray-400 hover:text-violet-400"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-violet-400"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-violet-400"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-violet-400"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
+
+            <!-- Coluna 3: links legais -->
+            <div>
+                <h3 class="font-bold text-lg">Institucional</h3>
+                <ul class="mt-3 space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-violet-400">Política de Privacidade</a></li>
+                    <li><a href="#" class="hover:text-violet-400">Termos de Uso</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-center text-sm text-gray-500 mt-10 border-t border-gray-800 pt-6">
+            © 2026 Melodia. Todos os direitos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
